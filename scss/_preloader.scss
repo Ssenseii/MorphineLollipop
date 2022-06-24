@@ -1,0 +1,58 @@
+#container{
+    // background: #ED213A;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    animation: disappear 4s ;
+}
+
+#text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    font-family: 'Varela', sans-serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+
+    width: 50rem;
+    height: 10rem;
+
+    animation: flashing 0.2s linear alternate;
+}
+
+.dots{
+    ///border: 1px solid white;
+    letter-spacing: 3px;
+    animation: flashing 0.5s linear alternate;
+}
+
+
+#loadingBar{
+
+    display: flex;
+    align-self: center;
+    width: 50rem;
+}
+
+
+
+#line{
+    border: 1px solid white;
+    position: relative;
+    top: 14rem;
+    height: 5px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    animation: loading 3s forwards cubic-bezier(1, 0, 0, 0);
+}
+
+
