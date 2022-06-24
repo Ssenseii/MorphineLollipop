@@ -1,15 +1,18 @@
-html{
+html {
     box-sizing: border-box;
     font-size: 100%;
 }
-body{
-    background: linear-gradient(to left, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body {
+    background: linear-gradient(
+        to left,
+        #93291e,
+        #ed213a
+    );
 }
 *,
 *::before,
-*::after{
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
-

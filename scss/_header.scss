@@ -1,12 +1,37 @@
-.header{
-    
-    &__logo{
-        &-img{
+.header {
+    display: flex;
+    flex-direction: row;
+
+    &__item{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin-right: 40rem;
+        &-img {
             width: 10rem;
             margin-left: 5rem;
-            margin-top: 1rem;
+            margin-top: 2rem;
         }
-
-
     }
+}
+
+.card{
+    position: relative;
+    top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item{
+        margin-right: 5rem;
+        justify-content: space-evenly;
+
+    color: white;
+    font-family:'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+
+}
 }
