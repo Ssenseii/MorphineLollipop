@@ -1,34 +1,36 @@
 .header {
+    // border: 1px solid white;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    background-color: $black;
 
     &__item {
+        // border: 2px pink solid;
         display: flex;
         justify-content: space-between;
     }
 
     &__logo {
-        margin-right: 40rem;
         &-img {
             width: 10rem;
             margin-left: 5rem;
-            margin-top: 2rem;
+            margin-top: 1rem;
         }
     }
 }
 
 .card {
-    position: relative;
-    top: 8px;
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    width: 50%;
 
     &__item {
         border: 1px solid transparent;
-        padding: 1rem;
-        margin-right: 5rem;
-        justify-content: space-evenly;
+        margin-right: 1rem;
+
 
         color: white;
         font-family: "Quicksand", sans-serif;
@@ -37,9 +39,23 @@
 
         
         &:hover {
-            border: 1px solid white;
-            border-top-left-radius: 25px;
-            border-bottom-right-radius: 25px;
+
         }
+
+        &:active
+        {
+
+        }
+    
+    }
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .header{
+
     }
 }

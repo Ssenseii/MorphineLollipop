@@ -1,15 +1,8 @@
 html {
     box-sizing: border-box;
     font-size: 100%;
+    background-color: $lightBlack;
 }
-body {
-    background: linear-gradient(
-        to left,
-        #93291e,
-        #ed213a
-    );
-}
-
 *,
 *::before,
 *::after {
@@ -18,6 +11,10 @@ body {
     box-sizing: inherit;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+body{
+
 }
