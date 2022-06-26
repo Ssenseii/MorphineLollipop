@@ -46,3 +46,22 @@
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
     animation: loading 1s forwards cubic-bezier(1, 0, 0, 0);
 }
+
+@media screen and (max-width: 900px) {
+
+    #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #text{
+        font-size: 36px;
+    }
+
+    #loadingBar{
+        width: 19rem;
+    }
+
+}

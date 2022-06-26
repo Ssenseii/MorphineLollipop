@@ -33,7 +33,12 @@
     }
 }
 
-@keyframes btn_scrape{
+@keyframes load{
+    0%{
+        opacity: 0%;
+    }
 
-    
+    100%{
+        opacity: 100%;
+    }
 }

@@ -1,0 +1,41 @@
+.projects{
+    display: flex;
+    background-color: $wineRed;
+    
+    &__title{
+        display: flex;
+        order: 1;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        width: 15.6%;
+        border-right: 1px solid white;
+        font-family: "pobeda";
+        font-weight: bold;
+        font-size: 24px;
+        background-color: $darkWineRed;
+    }
+    &__tags{
+        display: flex;
+        width: 85%;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        order: 2;
+        font-family: 'Blender Pro', sans-serif;
+        font-size: 24px;
+        letter-spacing: 2px;
+
+        &-button{
+            margin-right: 1rem;
+            border: 1px solid $lightGray;
+            padding: 30px 200px;
+
+            &:hover{
+                border: 2px solid white;
+                cursor: pointer;
+                padding: 29px 199px;
+            }
+        }
+    }
+}

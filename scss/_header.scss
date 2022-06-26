@@ -28,7 +28,7 @@
     width: 50%;
 
     &__item {
-        width: 8rem;
+        width: 6rem;
         border: 1px solid transparent;
         justify-content: space-evenly;
         border: 1px solid $black;
@@ -39,13 +39,13 @@
         font-weight: 100;
         background: $black;
 
-        background: linear-gradient(to left, $black 60%, lightGray 40%) right;
+        background: linear-gradient(to left, $black 50%, #fff 50%) right;
         background-size: 200%;
         transition: .5s ease-out;
         
         &:hover{
             background-position: left;
-            color: $black;
+            color: black;
         }
 
         &:active

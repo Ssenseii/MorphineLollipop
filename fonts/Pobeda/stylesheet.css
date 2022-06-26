@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Pobeda';
+    src: url('Pobeda-Bold.eot');
+    src: local('Pobeda Bold'), local('Pobeda-Bold'),
+        url('Pobeda-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Pobeda-Bold.woff2') format('woff2'),
+        url('Pobeda-Bold.woff') format('woff'),
+        url('Pobeda-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pobeda';
+    src: url('Pobeda-Regular.eot');
+    src: local('Pobeda Regular'), local('Pobeda-Regular'),
+        url('Pobeda-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Pobeda-Regular.woff2') format('woff2'),
+        url('Pobeda-Regular.woff') format('woff'),
+        url('Pobeda-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
