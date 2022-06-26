@@ -6,8 +6,12 @@
 
     &__image{
         // border: 1px red solid;
+        display: grid;
+        grid-template-columns: auto auto auto;
         width: 50%;
-        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.5rem;
     }
 
 

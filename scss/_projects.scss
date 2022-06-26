@@ -27,14 +27,43 @@
         letter-spacing: 2px;
 
         &-button{
-            margin-right: 1rem;
+            margin: 1rem;
+            padding: 1.5rem;
+            text-align: center;
             border: 1px solid $lightGray;
-            padding: 30px 200px;
+            width: 33%;
 
             &:hover{
                 border: 2px solid white;
                 cursor: pointer;
                 padding: 29px 199px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__title{
+            width: 100%;
+        }
+        &__tags{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            
+            &-button{
+                width: 100%;
+                margin: 0;
+                border-bottom: 0;
+                &:last-child{
+                    border-bottom: 1px solid white;
+                }
             }
         }
     }
