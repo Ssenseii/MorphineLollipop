@@ -28,23 +28,29 @@
     width: 50%;
 
     &__item {
+        width: 8rem;
         border: 1px solid transparent;
-        margin-right: 1rem;
         justify-content: space-evenly;
+        border: 1px solid $black;
 
         color: white;
         font-family: "Quicksand", sans-serif;
         font-size: 20px;
         font-weight: 100;
+        background: $black;
 
+        background: linear-gradient(to left, $black 60%, lightGray 40%) right;
+        background-size: 200%;
+        transition: .5s ease-out;
         
-        &:hover {
-
+        &:hover{
+            background-position: left;
+            color: $black;
         }
 
         &:active
         {
-
+            color: transparent;
         }
     
     }
@@ -64,6 +70,7 @@
         align-items: center;
 
         &__logo{
+            margin-top: 1rem;
             margin-bottom: 1rem;
             &-img{
                 margin-left: 0rem;
@@ -81,7 +88,10 @@
     width: 50%;
 
     &__item{
+        text-align: center;
+        padding: 1rem;
         margin-bottom: 1rem;
+        border-bottom: white 1px solid;
     }
     }
 }

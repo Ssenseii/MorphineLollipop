@@ -16,10 +16,11 @@
         // border: 1px solid violet;
         font-family: 'Blender Pro', sans-serif;
         font-weight: 100;
-        color: white;
+        color: $lightGray;
         width: 50%;
         
         &-title{
+            color: white;
             font-size: 72px;
             letter-spacing: 3px;
             margin-top: 4rem;
@@ -41,9 +42,19 @@
             font-size: 24px;
             letter-spacing: 2px;
             font-weight: bold;
-            background-color: white;
+            background-color: lightGray;
             text-align: left;
             padding-left: 1rem;
+
+            &:hover{
+                background-color: white;
+                cursor: pointer;
+            }
+
+            &:active{
+                background-color: transparent;
+                color: white;
+            }
         }
     }
 }
