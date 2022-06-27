@@ -60,9 +60,10 @@
             &-button{
                 width: 100%;
                 margin: 0;
-                border-bottom: 0;
-                &:last-child{
-                    border-bottom: 1px solid white;
+                border: 0px solid white;
+            
+                &:hover{
+
                 }
             }
         }

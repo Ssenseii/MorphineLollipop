@@ -47,17 +47,19 @@
     animation: loading 1s forwards cubic-bezier(1, 0, 0, 0);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 
     #container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     #text{
         font-size: 36px;
+        width: 100%;
     }
 
     #loadingBar{
