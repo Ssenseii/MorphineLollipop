@@ -1,0 +1,45 @@
+.display{
+    width: 100%;
+    display: flex;
+    flex-direction: center;
+
+    &__aside{
+        display: flex;
+        order: 1;
+        align-items: center;
+        padding: 1rem;
+        width: 15.5%;
+        height: 300px;
+        border-top: 1px solid white;
+        background-color: $wineRed;
+        flex-direction: column;
+
+        &-input{
+            margin-top: 2rem;
+            width: 14rem;
+            height: 2.5rem;
+            background-color: $black;
+            color: white;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 1rem;
+            
+            &::placeholder{
+                font-family: 'blender pro';
+                font-size: 16px;
+                color: white;
+            }
+        }
+            
+        &-button{
+            cursor: pointer;
+            background-color: transparent;
+            border: 1px solid transparent;
+            width: 36px;
+            height: 36px;
+            border-radius: 25px;
+
+        }
+    }
+}
