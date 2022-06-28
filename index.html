@@ -26,9 +26,16 @@
         />
         <!-- font-family: 'Quicksand', sans-serif; -->
 
-        <link href = "fonts/BlenderPro/style.css" rel = "stylesheet" type = "text/css" />
-        <link href = "fonts/Pobeda/stylesheet.css" rel = "stylesheet" type = "text/css" />
-
+        <link
+            href="fonts/BlenderPro/style.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="fonts/Pobeda/stylesheet.css"
+            rel="stylesheet"
+            type="text/css"
+        />
     </head>
     <body>
         <!-- preloader -->
@@ -42,57 +49,110 @@
                 <div id="line"></div>
             </div>
         </div>
-            <div id="load">
+        <div id="load">
+            <!-- header -->
+            <header class="header">
+                <div class="header__item header__logo">
+                    <a href="index.html"
+                        ><img
+                            class="header__logo-img"
+                            src="scss/images/logo__white.png"
+                            alt="morphine"
+                    /></a>
+                </div>
 
-                <!-- header -->
-                <header class="header">
-                    <div class="header__item header__logo">
-                        <a href="index.html"
-                            ><img
-                                class="header__logo-img"
-                                src="scss/images/logo__white.png"
-                                alt="morphine"
-                        /></a>
-                    </div>
-        
-                    <div class="header__item card">
-                        <a class="card__item" href="#">Home</a>
-                        <a class="card__item" href="#">Projects</a>
-                        <a class="card__item" href="#">Tools</a>
-                        <a class="card__item" href="#">About Me</a>
-                        <a class="card__item" href="#">Contact</a>
-                    </div>
-                </header>
-        
-                <main class="flash">
-                    <img class="flash__image" src="scss/images/cardWhiteLetters.png" alt="sasshtmljs">
-                    <div class="flash__text">
-                        <p class="flash__text-title">Morphine Lollipop</p>
-                        <h3 class="flash__text-sub">by Saad Aboussabr</h3>
-                        <p class="flash__text-bio">-Creative FrontEnd Developer, <br> -Concept Web Artist, <br> -designer, and illustrator.</p>
-                        <a href=""><button class="flash__text-button">Enter</button></a>
-                    </div>
-                </main>
+                <div class="header__item card">
+                    <a class="card__item" href="#">Home</a>
+                    <a class="card__item" href="#">Projects</a>
+                    <a class="card__item" href="#">Tools</a>
+                    <a class="card__item" href="#">About Me</a>
+                    <a class="card__item" href="#">Contact</a>
+                </div>
+            </header>
 
-                <nav class="projects">
-                    <div class="projects__title"><h1>Projects</h1></div>
-                    <div class="projects__tags">
-                        <div class="projects__tags-button">Art</div>
-                        <div class="projects__tags-button">Books</div>
-                        <div class="projects__tags-button">Science</div>
-                    </div>
-                </nav>
+            <main class="flash">
+                <img
+                    class="flash__image"
+                    src="scss/images/cardWhiteLetters.png"
+                    alt="sasshtmljs"
+                />
+                <div class="flash__text">
+                    <p class="flash__text-title">Morphine Lollipop</p>
+                    <h3 class="flash__text-sub">by Saad Aboussabr</h3>
+                    <p class="flash__text-bio">
+                        -Creative FrontEnd Developer, <br />
+                        -Concept Web Artist, <br />
+                        -designer, and illustrator.
+                    </p>
+                    <a href=""
+                        ><button class="flash__text-button">Enter</button></a
+                    >
+                </div>
+            </main>
 
-                <section class="display">
-                    <aside class="display__aside">
-                        <input class="display__aside-input" type="text" placeholder="search by name">
-                        <button class="display__aside-button" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
-                    </aside>
-                    <section class="display__item"></section>
-                    <section class="display__item"></section>
-                    <section class="display__item"></section>
-                </section>
-            </div>
+            <nav class="projects">
+                <div class="projects__title"><h1>Projects</h1></div>
+                <div class="projects__tags">
+                    <div class="projects__tags-button">Art</div>
+                    <div class="projects__tags-button">Books</div>
+                    <div class="projects__tags-button">Science</div>
+                </div>
+            </nav>
+
+            <section class="display">
+                <aside class="display__aside">
+                    <input
+                        class="display__aside-input"
+                        type="text"
+                        placeholder="search by name"
+                    />
+                    <button class="display__aside-button" type="submit">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#fff"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-search"
+                        >
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                    </button>
+                </aside>
+                <div class="display__items">
+                    <a
+                        href="https://ssenseii.github.io/SimpleTextReader/"
+                        target="_blank"
+                    >
+                        <div class="display__items-element textReader">
+                            <h1 class="textReader-title">The swan</h1>
+                            <div class="textReader-description">
+                                <h2 class="textReader-description-h2">
+                                    Simplistic Story Reader
+                                </h2>
+                                <p>
+                                    Read comfortably <br />
+                                    avoid eye strain with our display options
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="display__items-element"></div>
+                    <div class="display__items-element"></div>
+                    <div class="display__items-element"></div>
+                    <div class="display__items-element"></div>
+                    <div class="display__items-element"></div>
+                    <div class="display__items-element"></div>
+                    <div class="display__items-element"></div>
+                    <div class="display__items-element"></div>
+                </div>
+            </section>
+        </div>
     </body>
     <script src="js/script.js"></script>
 </html>
