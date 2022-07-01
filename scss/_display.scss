@@ -1,10 +1,10 @@
 .display {
     display: flex;
-    flex-direction: center;
     width: 100%;
 
     &__aside {
         display: flex;
+        flex-direction: column;
         order: 1;
         align-items: center;
         padding: 1rem;
@@ -12,8 +12,8 @@
         height: 887px;
         border-top: 1px solid white;
         border-bottom: 1px solid white;
+        border-right: 1px solid white;
         background-color: $wineRed;
-        flex-direction: column;
 
         &-input {
             margin-top: 2rem;
@@ -49,6 +49,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         width: 84.5%;
         border: 1px white solid;
+        border-left: 1px solid transparent;
 
         &-element {
             border: 1px solid black;
@@ -67,7 +68,7 @@
 
     background: linear-gradient(to left, black 50%, #fff 50%) right;
     background-size: 250%;
-    transition: 0.3s ease-out;
+    transition: 0.4s ease-out;
 
     &-title {
         font-family: "Public Sans", sans-serif;
@@ -88,5 +89,53 @@
     &:hover {
         background-position: left;
         cursor: pointer;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .display{
+        display: flex;
+        flex-direction: column;
+
+        &__aside{
+            width: 100%;
+            height: auto;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            border-right: none;
+            border-left: none;
+
+            &-input{
+                margin-right: 1rem;
+            }
+            &-button{
+                position: relative;
+                top: 0.55rem;
+                width: 4rem;
+                border: 1px solid white;
+                border-radius: 4px;
+                &:active{
+                    background-color: $darkWineRed;
+                }
+            }
+        }
+
+        &__items{
+            width: 100%;
+            border: none;
+
+            display: grid;
+            grid-template-columns: 1fr;
+        }
     }
 }
