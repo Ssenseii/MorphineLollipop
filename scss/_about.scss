@@ -1,0 +1,27 @@
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.About{
+
+    &__main{
+        // border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+.GIF{
+
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    // border: 1px solid red;
+    &__spider{
+
+        position: relative;
+
+    }
+}

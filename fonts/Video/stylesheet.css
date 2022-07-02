@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Video Cond';
+    src: url('VideoCond-Bold.eot');
+    src: local('Video Cond Bold'), local('VideoCond-Bold'),
+        url('VideoCond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('VideoCond-Bold.woff2') format('woff2'),
+        url('VideoCond-Bold.woff') format('woff'),
+        url('VideoCond-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Video';
+    src: url('Video-Bold.eot');
+    src: local('Video Bold'), local('Video-Bold'),
+        url('Video-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Video-Bold.woff2') format('woff2'),
+        url('Video-Bold.woff') format('woff'),
+        url('Video-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Video Cond SemBd';
+    src: url('VideoCond-SemiBold.eot');
+    src: local('Video Cond SemiBold'), local('VideoCond-SemiBold'),
+        url('VideoCond-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('VideoCond-SemiBold.woff2') format('woff2'),
+        url('VideoCond-SemiBold.woff') format('woff'),
+        url('VideoCond-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Video Cond';
+    src: url('VideoCond-Regular.eot');
+    src: local('Video Cond Regular'), local('VideoCond-Regular'),
+        url('VideoCond-Regular.eot?#iefix') format('embedded-opentype'),
+        url('VideoCond-Regular.woff2') format('woff2'),
+        url('VideoCond-Regular.woff') format('woff'),
+        url('VideoCond-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Video Cond';
+    src: url('VideoCond-Light.eot');
+    src: local('Video Cond Light'), local('VideoCond-Light'),
+        url('VideoCond-Light.eot?#iefix') format('embedded-opentype'),
+        url('VideoCond-Light.woff2') format('woff2'),
+        url('VideoCond-Light.woff') format('woff'),
+        url('VideoCond-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Video Cond Med';
+    src: url('VideoCond-Medium.eot');
+    src: local('Video Cond Medium'), local('VideoCond-Medium'),
+        url('VideoCond-Medium.eot?#iefix') format('embedded-opentype'),
+        url('VideoCond-Medium.woff2') format('woff2'),
+        url('VideoCond-Medium.woff') format('woff'),
+        url('VideoCond-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Video Med';
+    src: url('Video-Medium.eot');
+    src: local('Video Medium'), local('Video-Medium'),
+        url('Video-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Video-Medium.woff2') format('woff2'),
+        url('Video-Medium.woff') format('woff'),
+        url('Video-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Video SemBd';
+    src: url('Video-SemiBold.eot');
+    src: local('Video SemiBold'), local('Video-SemiBold'),
+        url('Video-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Video-SemiBold.woff2') format('woff2'),
+        url('Video-SemiBold.woff') format('woff'),
+        url('Video-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Video';
+    src: url('Video-Regular.eot');
+    src: local('Video Regular'), local('Video-Regular'),
+        url('Video-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Video-Regular.woff2') format('woff2'),
+        url('Video-Regular.woff') format('woff'),
+        url('Video-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Video';
+    src: url('Video-Light.eot');
+    src: local('Video Light'), local('Video-Light'),
+        url('Video-Light.eot?#iefix') format('embedded-opentype'),
+        url('Video-Light.woff2') format('woff2'),
+        url('Video-Light.woff') format('woff'),
+        url('Video-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
