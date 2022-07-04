@@ -40,7 +40,10 @@ $("#Enter").click(
 
         setTimeout(
             function () {
-                location.href = "https://github.com/Ssenseii/MorphineLollipop";
+                window.open(
+                    'https://github.com/Ssenseii/MorphineLollipop',
+                    '_blank'
+                );
             },
-            800);
+            500);
     });
