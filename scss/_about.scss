@@ -4,12 +4,17 @@
 }
 
 .About{
+    
+    border: 1px solid red;
 
     &__main{
         // border: 1px solid white;
         display: flex;
         flex-direction: column;
         width: 80%;
+
+        font-family: "Video Cond";
+        font-size: 36px;
     }
 }
 
