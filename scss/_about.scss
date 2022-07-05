@@ -3,30 +3,79 @@
     flex-direction: row;
 
     &__line{
-        position: relative;
-        background-color: white;
+        height: auto;
         width: 2px;
-        height: 100vh;
-        margin: 4rem 4rem 0rem 6.2rem;
-
-    }
-
-    &__dot{
-        position: fixed;
-        left: 87px;
         background-color: white;
-        height: 25px;
-        width: 25px;
-        border-radius: 50%;
+        margin: 23rem 7rem 0rem 6rem;
+
+        animation: load_line 0.7s ease-in-out;
     }
+
+    
 
     &__text{
+        margin-top: 17rem;
         display: flex;
         flex-direction: column;
         width: 80%;
-        padding: rem;
+        padding: 1rem;
 
         font-family: "Video Cond";
         font-size: 36px;
+
+        animation: load_text 0.7s ease-in-out;
+
+        &-header{
+            text-decoration: underline dotted;
+        }
+        
+        &-social{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            align-items: center;
+            width: 30rem;
+            padding: 1rem 0rem;
+
+            &-btn{
+                width: 50px;
+                height: 50px;
+                margin-right: 1.5rem;
+                border-radius: 50%;
+                border: 1px solid white;
+                
+                background-color: transparent;
+                
+                color: white;
+                font-size: 16px;
+
+
+                &:hover{
+                cursor: pointer;
+            }
+            }
+        }
+
+        &-bio{
+            font-size: 32px;
+            margin-top: 2rem;
+            width: 50rem;
+
+            &-span{
+                display: inline-block;
+                color: rgb(7, 116, 7);
+                font-family: "Roboto mono";
+                font-size: 16px;
+            }
+        }
     }
+}
+
+
+.resume{
+    border-radius: 8px;
+    width: 8rem;
+    height: 2rem;
+
+    font-size: 12px;
 }
