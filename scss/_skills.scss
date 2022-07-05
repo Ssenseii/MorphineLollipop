@@ -1,0 +1,177 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Video Cond";
+    font-size: 20px;
+
+    
+    &__main{
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 4rem;
+        margin-top: 4rem;
+
+
+        &-title{
+            margin-bottom: 1rem;
+            font-size: 30px;
+        }
+
+        &-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 24px;
+            color: gray;
+
+            &-element{
+                width: 16rem;
+                margin-right: 4rem;
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+
+    &__tools{
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 4rem;
+        margin-top: 4rem;
+
+
+        &-title{
+            margin-bottom: 1rem;
+            font-size: 30px;
+        }
+
+        &-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 24px;
+            color: gray;
+
+            &-element{
+                width: 16rem;
+                margin-right: 4rem;
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+
+    &__experience{
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 4rem;
+        margin-top: 4rem;
+
+
+        &-title{
+            margin-bottom: 1rem;
+            font-size: 30px;
+        }
+
+        &-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 24px;
+            color: gray;
+
+            &-element{
+                width: 16rem;
+                margin-right: 4rem;
+
+                &-title{
+                    color: rgb(255, 255, 0);
+                }
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+
+    &__languages{
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 4rem;
+        margin-top: 4rem;
+
+
+        &-title{
+            margin-bottom: 1rem;
+            font-size: 30px;
+        }
+
+        &-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 24px;
+            color: gray;
+
+            &-element{
+                width: 16rem;
+                margin-right: 4rem;
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+
+    &__noskill{
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 4rem;
+        margin-top: 4rem;
+
+
+        &-title{
+            margin-bottom: 1rem;
+            font-size: 30px;
+        }
+
+        &-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 24px;
+            color: gray;
+
+            &-element{
+                width: 16rem;
+                margin-right: 4rem;
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+    
+}

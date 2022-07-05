@@ -1,32 +1,32 @@
 .wrapper{
     display: flex;
     flex-direction: row;
-}
 
-.About{
-    
-    border: 1px solid red;
+    &__line{
+        position: relative;
+        background-color: white;
+        width: 2px;
+        height: 100vh;
+        margin: 4rem 4rem 0rem 6.2rem;
 
-    &__main{
-        // border: 1px solid white;
+    }
+
+    &__dot{
+        position: fixed;
+        left: 87px;
+        background-color: white;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+
+    &__text{
         display: flex;
         flex-direction: column;
         width: 80%;
+        padding: rem;
 
         font-family: "Video Cond";
         font-size: 36px;
-    }
-}
-
-.GIF{
-
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    // border: 1px solid red;
-    &__spider{
-
-        position: relative;
-
     }
 }
