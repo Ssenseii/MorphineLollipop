@@ -227,32 +227,7 @@
         flex-direction: column;
 
         &__aside{
-            width: 100%;
-            height: auto;
-
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-
-            border-top: 1px solid white;
-            border-bottom: 1px solid white;
-            border-right: none;
-            border-left: none;
-
-            &-input{
-                margin-right: 1rem;
-            }
-            &-button{
-                position: relative;
-                top: 0.55rem;
-                width: 4rem;
-                border: 1px solid white;
-                border-radius: 4px;
-                &:active{
-                    background-color: $darkWineRed;
-                }
-            }
+            display: none;
         }
 
         &__items{

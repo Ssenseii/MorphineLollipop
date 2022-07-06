@@ -34,6 +34,7 @@
             padding: 24px;
             text-align: center;
             width: 33%;
+            border: 1px solid transparent;
 
             &::before{
                 content: '';
@@ -54,7 +55,7 @@
 
             &:hover{
                 cursor: pointer;
-                padding: 20px;
+                padding: 24px;
                 border: 1px solid white;
                 
 
@@ -78,7 +79,7 @@
                 z-index: 1;
                 transition: all 0.3s;
                 position: absolute;
-                background-color: rgba(144, 55, 55, 0.1);
+                background-color: rgba(39, 5, 5, 0.293);
             }
         }
     }

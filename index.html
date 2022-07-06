@@ -108,27 +108,19 @@
             <section class="display">
                 <aside class="display__aside">
                     <input
+                        id= "projectTitlesInput"
+                        onkeyup="search()"
                         class="display__aside-input"
                         type="text"
                         placeholder="search by name"
                     />
-                    <button class="display__aside-button" type="submit">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="#fff"
-                            stroke-width="3"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="feather feather-search"
-                        >
-                            <circle cx="11" cy="11" r="8" />
-                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                        </svg>
-                    </button>
+
+
+                    <ul id="projectTitles">
+                        <li><a class="listElement" href="#">Simple Text Reader</a></li>
+                        <li><a class="listElement" href="#">Hsuccess</a></li>
+                    </ul>
+
                 </aside>
                 <div class="display__items">
                     <a

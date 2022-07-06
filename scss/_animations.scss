@@ -104,21 +104,15 @@
         visibility: hidden;
         transform: rotate(0deg);
         border-radius: 50%;
-        width: 13rem;
-        height: 14rem;
     }
 
     50%{
         visibility: visible;
         transform: rotate(180deg);
-        width: 14rem;
-        height: 14rem;
         border-radius: 25%;
     }
 
     100%{
-        width: 13rem;
-        height: 14rem;
         border-radius: 50%;
         transform: rotate(360deg);
     }
