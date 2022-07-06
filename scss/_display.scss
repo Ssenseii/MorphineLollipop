@@ -96,55 +96,127 @@
 
 .hsuccess{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     background-color: $beige;
     z-index: 100;
+    cursor: pointer;
 
-    &-circle{
+    &-btn{
         display: flex;
-        flex-direction: column;
-        overflow: hidden;
         justify-content: center;
         align-items: center;
-        width: 10rem;
-        height: 10rem;
-        background-color: #004998;
         z-index: 10;
-        border-radius: 50%;
-        transition: all 0.4s;
 
-        &:hover{
-            transform: rotate(180deg);
-            border-radius: 16px;
-            transition: border-radius 0.5s ease, transform 0.7s ease;        
-        }        
+        &-circle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 10rem;
+            height: 10rem;
+            background-color: $circleBlue;
+            z-index: 10;
+            border-radius: 50%;
+            transition: all 0.4s;
+    
+            &:hover{
+                transform: rotate(180deg);
+                width: 12rem;
+                height: 12rem;
+                border-radius: 50%;
+                transition: width 0.5s ease, height 0.5s ease, transform 0.7s ease;        
+            }        
+        }
+    
+        &-circle > p{
+            display: none;
+            font-size: 32px;
+            text-align: center;
+            
+        }
+    
+        &-circle:hover >p{
+            cursor: pointer;
+            display: block;
+            transition: opacity 0.5s;
+            animation: load 0.3s;
+            transform: rotateZ(180deg);
+        }
+    
+        &-circle > h1{
+            display: inline-block;
+            font-size: 72px;
+        }
+    
+        &-circle:hover >h1{
+            display: none;
+            transform: rotateY(180deg);
+            transition: all 0.3s;
+        }
     }
 
-    &-circle > p{
-        display: none;
-        
-    }
+    &-pulse{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
 
-    &-circle:hover >p{
-        display: block;
-        transition: opacity 0.5s;
-        animation: load 0.3s;
-        transform: rotateZ(180deg);
-    }
+        &-p1{
+            transition: all 1s;
+            animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
+        }
 
-    &-circle > h1{
-        display: inline-block;
-    }
+        &-p2{
+            transition: all 1s;
+            animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
+            animation-delay: 1s;
+        }
 
-    &-circle:hover >h1{
-        display: none;
-        transform: rotateY(180deg);
-        transition: all 0.3s;
+        &-p3{
+            transition: all 1s;
+            animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
+            animation-delay: 2s;
+        }
+
+        &-p4{
+            transition: all 1s;
+            animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
+            animation-delay: 3s;
+        }
+
+        &-p5{
+            transition: all 1s;
+            animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
+            animation-delay: 4s;
+        }
+
+        &-p6{
+            transition: all 1s;
+            animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
+            animation-delay: 5s;
+        }
+
     }
 
 }
 
+#animation{
+    display: none;
+}
+
+#btn:hover + #animation{
+    display: flex;
+}
+
+
+.shape{
+    position: absolute;
+    visibility: hidden;
+    width: 13rem;
+    height: 13rem;
+    border: 1px solid $lightCircleBlue;
+}
 
 
 

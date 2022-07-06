@@ -74,6 +74,7 @@
     }
 }
 
+
 @keyframes load_line {
     0%{
         transform: scaleY(0)
@@ -83,3 +84,43 @@
         transform: scaleY(100%)
     }
 }
+
+@keyframes pulse{
+    0%{
+        width: 2rem;
+        width: 2rem;
+    }
+
+    100%{
+        width: 13rem;
+        height: 13rem;
+    }
+}
+
+@keyframes rotating{
+
+    
+    0%{
+        visibility: hidden;
+        transform: rotate(0deg);
+        border-radius: 50%;
+        width: 13rem;
+        height: 14rem;
+    }
+
+    50%{
+        visibility: visible;
+        transform: rotate(180deg);
+        width: 14rem;
+        height: 14rem;
+        border-radius: 25%;
+    }
+
+    100%{
+        width: 13rem;
+        height: 14rem;
+        border-radius: 50%;
+        transform: rotate(360deg);
+    }
+}
+
