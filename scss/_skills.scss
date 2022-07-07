@@ -1,208 +1,195 @@
-.skills{
+.skills {
     display: flex;
     flex-direction: column;
 
     font-family: "Video Cond";
     font-size: 20px;
 
-    
-    &__main{
+    &__main {
         display: flex;
         flex-direction: column;
 
         margin-left: 4rem;
         margin-top: 4rem;
 
-
-        &-title{
+        &-title {
             margin-bottom: 1rem;
             font-size: 24px;
         }
 
-        &-grid{
+        &-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            
-            font-family: 'Roboto Mono', sans-serif;
+
+            font-family: "Roboto Mono", sans-serif;
             font-size: 16px;
             color: gray;
 
-            &-element{
+            &-element {
                 width: 16rem;
                 margin-bottom: 0.75rem;
 
-                &:last-child{
+                &:last-child {
                     margin-right: 0px;
                 }
             }
         }
     }
 
-
-    &__tools{
+    &__tools {
         display: flex;
         flex-direction: column;
 
         margin-left: 4rem;
         margin-top: 4rem;
 
-
-        &-title{
+        &-title {
             margin-bottom: 1rem;
             font-size: 24px;
         }
 
-        &-grid{
+        &-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            
-            font-family: 'Roboto Mono', sans-serif;
+
+            font-family: "Roboto Mono", sans-serif;
             font-size: 16px;
             color: gray;
 
-            &-element{
+            &-element {
                 width: 16rem;
                 margin-bottom: 0.75rem;
-                &:last-child{
+                &:last-child {
                     margin-right: 0px;
                 }
             }
         }
     }
 
-
-    &__experience{
+    &__experience {
         display: flex;
         flex-direction: column;
 
         margin-left: 4rem;
         margin-top: 4rem;
 
-
-        &-title{
+        &-title {
             margin-bottom: 1rem;
             font-size: 24px;
         }
 
-        &-grid{
+        &-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            
-            font-family: 'Roboto Mono', sans-serif;
+
+            font-family: "Roboto Mono", sans-serif;
             font-size: 16px;
             color: gray;
 
-            &-element{
+            &-element {
                 width: 16rem;
                 margin-bottom: 0.75rem;
 
-                &-title{
+                &-title {
                     color: rgb(255, 255, 0);
                     margin-bottom: 1rem;
                 }
 
-                &:last-child{
+                &:last-child {
                     margin-right: 0px;
                 }
             }
         }
     }
 
-
-    &__languages{
+    &__languages {
         display: flex;
         flex-direction: column;
 
         margin-left: 4rem;
         margin-top: 4rem;
 
-
-        &-title{
+        &-title {
             margin-bottom: 1rem;
             font-size: 24px;
         }
 
-        &-grid{
+        &-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            
-            font-family: 'Roboto Mono', sans-serif;
+
+            font-family: "Roboto Mono", sans-serif;
             font-size: 16px;
             color: gray;
 
-            &-element{
+            &-element {
                 width: 16rem;
                 margin-bottom: 0.75rem;
 
-                &-level{
+                &-level {
                     color: rgb(2, 173, 2);
                     margin-bottom: 1rem;
                 }
 
-                &:last-child{
+                &:last-child {
                     margin-right: 0px;
                 }
             }
         }
     }
 
-
-    &__noskill{
+    &__noskill {
         display: flex;
         flex-direction: column;
 
         margin-left: 4rem;
         margin-top: 4rem;
 
-
-        &-title{
+        &-title {
             margin-bottom: 1rem;
             font-size: 24px;
         }
 
-        &-grid{
+        &-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            
-            font-family: 'Roboto Mono', sans-serif;
+
+            font-family: "Roboto Mono", sans-serif;
             font-size: 16px;
             color: gray;
 
-            &-element{
+            &-element {
                 width: 16rem;
                 margin-bottom: 0.75rem;
 
-                &:last-child{
+                &:last-child {
                     margin-right: 0px;
                 }
             }
         }
     }
-    
 }
 
-
 @media screen and (max-width: 1500px) {
-    
-    .skills{
+    .skills {
         width: 100%;
 
-        &__main{
+        &__main {
             padding: 0;
             margin: 0;
             margin-bottom: 4rem;
 
-            &-title{
+            &-title {
                 text-align: center;
+                margin-bottom: 1rem;
             }
 
-            &-grid{
+            &-grid {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 width: 100%;
-                
 
-                &-element{
+                &-element {
                     display: flex;
                     width: 50%;
                     text-align: center;
@@ -210,25 +197,26 @@
                     justify-self: center;
 
                     margin-bottom: 2rem;
+                }
             }
         }
-    }
 
-        &__tools{
+        &__tools {
             padding: 0;
             margin: 0;
+            margin-bottom: 4rem;
 
-            &-title{
+            &-title {
                 text-align: center;
+                margin-bottom: 1rem;
             }
 
-            &-grid{
+            &-grid {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 width: 100%;
-                
 
-                &-element{
+                &-element {
                     display: flex;
                     width: 50%;
                     text-align: center;
@@ -237,51 +225,26 @@
                     justify-content: center;
 
                     margin-bottom: 2rem;
+                }
             }
         }
-    }
 
-        &__experience{
+        &__experience {
             padding: 0;
             margin: 0;
+            margin-bottom: 4rem;
 
-            &-title{
+            &-title {
                 text-align: center;
+                margin-bottom: 1rem;
             }
 
-            &-grid{
+            &-grid {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 width: 100%;
-                
 
-                &-element{
-                    display: flex;
-                    width: 50%;
-                    text-align: center;
-                    align-items: center;
-                    justify-self: center;
-
-                    margin-bottom: 2rem;
-            }
-        }
-    }
-
-        &__languages{
-            padding: 0;
-            margin: 0;
-
-            &-title{
-                text-align: center;
-            }
-
-            &-grid{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                width: 100%;
-                
-
-                &-element{
+                &-element {
                     display: flex;
                     flex-direction: column;
                     width: 50%;
@@ -290,34 +253,67 @@
                     justify-self: center;
 
                     margin-bottom: 2rem;
+                }
             }
         }
-    }
 
-        &__noskill{
+        &__languages {
             padding: 0;
             margin: 0;
+            margin-bottom: 4rem;
 
-            &-title{
+            &-title {
                 text-align: center;
+                margin-bottom: 1rem;
             }
 
-            &-grid{
+            &-grid {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
                 width: 100%;
-                
 
-                &-element{
+                &-element {
                     display: flex;
+                    flex-direction: column;
                     width: 50%;
                     text-align: center;
                     align-items: center;
                     justify-self: center;
 
                     margin-bottom: 2rem;
+
+                    &-level {
+                        width: 10rem;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+        &__noskill {
+            padding: 0;
+            margin: 0;
+
+            &-title {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            &-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+
+                &-element {
+                    display: flex;
+                    width: 50%;
+                    text-align: center;
+                    align-items: center;
+                    justify-self: center;
+                    justify-content: center;
+                    margin-bottom: 2rem;
+                }
             }
         }
     }
-}
 }
