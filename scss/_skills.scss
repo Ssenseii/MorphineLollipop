@@ -29,7 +29,6 @@
 
             &-element{
                 width: 16rem;
-                margin-right: 4rem;
                 margin-bottom: 0.75rem;
 
                 &:last-child{
@@ -63,7 +62,6 @@
 
             &-element{
                 width: 16rem;
-                margin-right: 4rem;
                 margin-bottom: 0.75rem;
                 &:last-child{
                     margin-right: 0px;
@@ -96,7 +94,6 @@
 
             &-element{
                 width: 16rem;
-                margin-right: 4rem;
                 margin-bottom: 0.75rem;
 
                 &-title{
@@ -135,7 +132,6 @@
 
             &-element{
                 width: 16rem;
-                margin-right: 4rem;
                 margin-bottom: 0.75rem;
 
                 &-level{
@@ -174,7 +170,6 @@
 
             &-element{
                 width: 16rem;
-                margin-right: 4rem;
                 margin-bottom: 0.75rem;
 
                 &:last-child{
@@ -184,4 +179,145 @@
         }
     }
     
+}
+
+
+@media screen and (max-width: 1500px) {
+    
+    .skills{
+        width: 100%;
+
+        &__main{
+            padding: 0;
+            margin: 0;
+            margin-bottom: 4rem;
+
+            &-title{
+                text-align: center;
+            }
+
+            &-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+                
+
+                &-element{
+                    display: flex;
+                    width: 50%;
+                    text-align: center;
+                    align-items: center;
+                    justify-self: center;
+
+                    margin-bottom: 2rem;
+            }
+        }
+    }
+
+        &__tools{
+            padding: 0;
+            margin: 0;
+
+            &-title{
+                text-align: center;
+            }
+
+            &-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+                
+
+                &-element{
+                    display: flex;
+                    width: 50%;
+                    text-align: center;
+                    align-items: center;
+                    justify-self: center;
+                    justify-content: center;
+
+                    margin-bottom: 2rem;
+            }
+        }
+    }
+
+        &__experience{
+            padding: 0;
+            margin: 0;
+
+            &-title{
+                text-align: center;
+            }
+
+            &-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+                
+
+                &-element{
+                    display: flex;
+                    width: 50%;
+                    text-align: center;
+                    align-items: center;
+                    justify-self: center;
+
+                    margin-bottom: 2rem;
+            }
+        }
+    }
+
+        &__languages{
+            padding: 0;
+            margin: 0;
+
+            &-title{
+                text-align: center;
+            }
+
+            &-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+                
+
+                &-element{
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    text-align: center;
+                    align-items: center;
+                    justify-self: center;
+
+                    margin-bottom: 2rem;
+            }
+        }
+    }
+
+        &__noskill{
+            padding: 0;
+            margin: 0;
+
+            &-title{
+                text-align: center;
+            }
+
+            &-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+                
+
+                &-element{
+                    display: flex;
+                    width: 50%;
+                    text-align: center;
+                    align-items: center;
+                    justify-self: center;
+
+                    margin-bottom: 2rem;
+            }
+        }
+    }
+}
 }

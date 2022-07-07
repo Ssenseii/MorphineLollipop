@@ -8,7 +8,7 @@
         background-color: white;
         margin: 23rem 7rem 0rem 6rem;
 
-        animation: load_line 0.7s ease-in-out;
+        animation: load_line 0.5s ease-in-out;
     }
 
     
@@ -71,11 +71,79 @@
     }
 }
 
+.git{
+    background: linear-gradient(to right, $circleBlue 50%, transparent 50%);
+    background-size: 250%;
+    background-position: right;
+    transition: all 0.2s;
+
+    &:hover{
+        transition: background-position 0.2s;
+        background-position: left;
+        border: 2px solid white; 
+    }
+}
+
+.linkdin{
+    background: linear-gradient(to left, $saturatedYellow 50%, transparent 50%);
+    background-size: 250%;
+    background-position: left;
+    transition: all 0.2s;
+
+    &:hover{
+        color: black;
+        transition: background-position 0.2s;
+        background-position: right;
+        border: 2px solid white;
+    }
+}
 
 .resume{
     border-radius: 8px;
-    width: 8rem;
-    height: 2rem;
+    width: 9rem;
+    height: 3rem;
 
     font-size: 12px;
+
+
+    &:hover{
+        border: 2px solid white;
+        font-weight: Bolder;
+    }
+}
+
+
+@media screen and (max-width: 1500px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &__line{
+            display: none;
+        }
+
+        &__text{
+            width: 100%;
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-social{
+                width: 40%;
+                display: flex;
+                justify-content: space-between;
+
+                &-btn{
+                    margin-right: 0px;
+                }
+            }
+
+            &-bio{
+                text-align: center;
+                padding: 5rem;
+            }
+        }
+    }
 }
