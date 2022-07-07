@@ -136,13 +136,15 @@
                 justify-content: space-between;
 
                 &-btn{
-                    margin-right: 0px;
+                    margin-right: 1rem;
                 }
             }
 
             &-bio{
+                width: 80%;
                 text-align: center;
-                padding: 5rem;
+                padding: 0;
+                margin-bottom: 4rem;
             }
         }
     }
