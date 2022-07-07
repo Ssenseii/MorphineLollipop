@@ -118,3 +118,13 @@
     }
 }
 
+
+@keyframes BGpulse{
+    from{
+        background-color: #fff;
+    }
+
+    to{
+        background-color: $circleBlue;
+    }
+}

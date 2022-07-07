@@ -66,8 +66,13 @@ function search(){
             txtValue = a.textContent || a.innerText;
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
                 li[i].style.opacity = "1";
+                li[i].style.textDecoration = "none"
             } else {
                 li[i].style.opacity = "0.5";
+                li[i].style.textDecoration = "line-through"
             }
         }
 }
+
+
+

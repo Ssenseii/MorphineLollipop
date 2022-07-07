@@ -17,7 +17,7 @@
 
         &-input {
             margin-top: 2rem;
-            width: 14rem;
+            width: 70%;
             height: 2.5rem;
             background-color: $black;
             color: white;
@@ -58,6 +58,15 @@
     }
 }
 
+.listElement{
+    font-family: 'Blender Pro';
+    font-weight: 900;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
 /// Elements
 
 .textReader{
@@ -70,7 +79,10 @@
     background-size: 250%;
     transition: 0.4s ease-out;
 
+    padding: 2rem;
+
     &-title {
+        text-align: center;
         font-family: "Public Sans", sans-serif;
         font-weight: 100;
         font-size: 36px;
@@ -96,11 +108,34 @@
 
 .hsuccess{
     display: flex;
+    position: relative;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
-    background-color: $beige;
+    background-color: #fff;
     z-index: 100;
     cursor: pointer;
+
+    &:before{
+        content:"";
+        display: block;
+        position: absolute;
+        top:50%;
+        left:50%;
+        border-radius:50%;
+        width:0%;
+        padding-top:0%;
+        transform: translate(-50%,-50%);
+        background:#e1e1e1;
+        transition: 0.5s ease padding-top, 0.5s ease width;
+    }
+
+    &:hover {
+        &:before {
+            width:150%;
+            padding-top:150%;
+        }
+    }
 
     &-btn{
         display: flex;
