@@ -75,4 +75,33 @@ function search(){
 }
 
 
+    var btnI1 = document.getElementById("btnI1");
+    btnI1.addEventListener("mouseover", function(){
+        btnI1.style.backgroundColor = "white";
+        btnI1.style.transform = "rotateY(180deg)";
+        btnI1.style.transition = "transform 0.5s";
+        })
+    
+    var btnI2 = document.getElementById("btnI2");
+    btnI2.addEventListener("mouseover", function(){
+        btnI2.style.backgroundColor = "white";
+        btnI2.style.transform = "rotateY(180deg)";
+        btnI2.style.transition = "transform 0.5s";
+        })
+
+    var btnB = document.getElementById("btnB");
+    btnB.addEventListener("mouseover", function(){
+        btnB.style.backgroundColor = "white";
+        btnB.style.transform = "rotateY(360deg)";
+        btnB.style.transition = "transform 0.8s";
+        })
+
+    var btnT = document.getElementById("btnT");
+    btnT.addEventListener("mouseover", function(){
+        btnT.style.backgroundColor = "white";
+        btnT.style.transform = "rotateY(180deg)";
+        btnT.style.transition = "transform 0.5s";
+        })
+
+
 
