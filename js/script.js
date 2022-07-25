@@ -104,4 +104,8 @@ function search(){
         })
 
 
-
+        ///contact alert
+    var contact = document.getElementById("contactme")  
+    contact.addEventListener("click", function(){
+        window.alert("contact page coming soon, check the about page for my resume, it contains all");
+    })
