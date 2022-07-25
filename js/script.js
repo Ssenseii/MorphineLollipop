@@ -41,7 +41,7 @@ $("#Enter").click(
         setTimeout(
             function () {
                 window.open(
-                    'https://github.com/Ssenseii/MorphineLollipop',
+                    'https://github.com/Ssenseii',
                     '_blank'
                 );
             },
