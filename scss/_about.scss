@@ -87,6 +87,7 @@
 
 .linkdin{
     background: linear-gradient(to left, $saturatedYellow 50%, transparent 50%);
+    
     background-size: 250%;
     background-position: left;
     transition: all 0.2s;
@@ -109,7 +110,7 @@
 
     &:hover{
         border: 2px solid white;
-        font-weight: Bolder;
+        
     }
 }
 
@@ -135,11 +136,7 @@
                 width: 80%;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-
-                &-btn{
-                    margin-right: 1rem;
-                }
+                justify-content: space-evenly;
             }
 
             &-bio{
