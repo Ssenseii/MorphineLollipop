@@ -255,7 +255,6 @@
 
 
 
-
 .bit{
     display: flex;
     flex-direction: row;
@@ -287,6 +286,14 @@
     &:hover{
         cursor: pointer;
     }
+}
+
+.building{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /// you are here.
 }
 
 .rotateBit{
