@@ -276,6 +276,9 @@
         font-family: 'video';
         font-size: 48px;
 
+        transform: rotateY(-180deg);
+        transition: transform 1s;
+
         &:hover{
             cursor: pointer;
         }
@@ -284,6 +287,17 @@
     &:hover{
         cursor: pointer;
     }
+}
+
+.rotateBit{
+    background-color: white;
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+.rotateBit2{
+    background-color: white;
+    transform: rotateY(360deg);
+    transition: transform 1s;
 }
 
 

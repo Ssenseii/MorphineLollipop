@@ -7,7 +7,7 @@ function preloaderTimer() {
 var loadEverything = setInterval(Timer, 1000);
 var loading = document.getElementById("load");
 loading.style.display = "none";
-function Timer(){
+function Timer() {
     var loading = document.getElementById("load");
     loading.style.display = "initial";
 }
@@ -52,60 +52,55 @@ $("#Enter").click(
 ///Search function
 
 
-function search(){
-        // Declare variables
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById('projectTitlesInput');
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("projectTitles");
-        li = ul.getElementsByTagName('li');
+function search() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('projectTitlesInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("projectTitles");
+    li = ul.getElementsByTagName('li');
 
-        // Loop through all list items, and hide those who don't match the search query
-        for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            txtValue = a.textContent || a.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.opacity = "1";
-                li[i].style.textDecoration = "none"
-            } else {
-                li[i].style.opacity = "0.5";
-                li[i].style.textDecoration = "line-through"
-            }
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.opacity = "1";
+            li[i].style.textDecoration = "none"
+        } else {
+            li[i].style.opacity = "0.5";
+            li[i].style.textDecoration = "line-through"
         }
+    }
 }
 
 
-    var btnI1 = document.getElementById("btnI1");
-    btnI1.addEventListener("mouseover", function(){
-        btnI1.style.backgroundColor = "white";
-        btnI1.style.transform = "rotateY(180deg)";
-        btnI1.style.transition = "transform 0.5s";
-        })
-    
-    var btnI2 = document.getElementById("btnI2");
-    btnI2.addEventListener("mouseover", function(){
-        btnI2.style.backgroundColor = "white";
-        btnI2.style.transform = "rotateY(180deg)";
-        btnI2.style.transition = "transform 0.5s";
-        })
-
-    var btnB = document.getElementById("btnB");
-    btnB.addEventListener("mouseover", function(){
-        btnB.style.backgroundColor = "white";
-        btnB.style.transform = "rotateY(360deg)";
-        btnB.style.transition = "transform 0.8s";
-        })
-
-    var btnT = document.getElementById("btnT");
-    btnT.addEventListener("mouseover", function(){
-        btnT.style.backgroundColor = "white";
-        btnT.style.transform = "rotateY(180deg)";
-        btnT.style.transition = "transform 0.5s";
-        })
 
 
-        ///contact alert
-    var contact = document.getElementById("contactme")  
-    contact.addEventListener("click", function(){
-        window.alert("contact page coming soon, check the about page for my resume, it contains all");
-    })
+var btnI1 = document.getElementById("btnI1");
+btnI1.addEventListener("mouseover", function () {
+    btnI1.classList.toggle("rotateBit");
+})
+
+
+var btnI2 = document.getElementById("btnI2");
+btnI2.addEventListener("mouseover", function () {
+    btnI2.classList.toggle("rotateBit");
+})
+
+var btnB = document.getElementById("btnB");
+btnB.addEventListener("mouseover", function () {
+    btnB.classList.toggle("rotateBit2");
+})
+
+var btnT = document.getElementById("btnT");
+btnT.addEventListener("mouseover", function () {
+    btnT.classList.toggle("rotateBit");
+})
+
+
+///contact alert
+var contact = document.getElementById("contactme")
+contact.addEventListener("click", function () {
+    window.alert("contact page coming soon, check the about page for my resume, it contains all");
+})
