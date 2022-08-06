@@ -1,7 +1,7 @@
 .display {
     display: flex;
     width: 100%;
-    
+
     &__aside {
         display: flex;
         flex-direction: column;
@@ -58,18 +58,18 @@
     }
 }
 
-.listElement{
-    font-family: 'Blender Pro';
+.listElement {
+    font-family: "Blender Pro";
     font-weight: 900;
 
-    &:hover{
+    &:hover {
         text-decoration: underline;
     }
 }
 
 /// Elements
 
-.textReader{
+.textReader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,12 +101,10 @@
     &:hover {
         background-position: left;
         cursor: pointer;
-        
     }
 }
 
-
-.hsuccess{
+.hsuccess {
     display: flex;
     position: relative;
     overflow: hidden;
@@ -116,34 +114,34 @@
     z-index: 100;
     cursor: pointer;
 
-    &:before{
-        content:"";
+    &:before {
+        content: "";
         display: block;
         position: absolute;
-        top:50%;
-        left:50%;
-        border-radius:50%;
-        width:0%;
-        padding-top:0%;
-        transform: translate(-50%,-50%);
-        background:#e1e1e1;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        width: 0%;
+        padding-top: 0%;
+        transform: translate(-50%, -50%);
+        background: #e1e1e1;
         transition: 0.5s ease padding-top, 0.5s ease width;
     }
 
     &:hover {
         &:before {
-            width:150%;
-            padding-top:150%;
+            width: 150%;
+            padding-top: 150%;
         }
     }
 
-    &-btn{
+    &-btn {
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 10;
 
-        &-circle{
+        &-circle {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -154,98 +152,95 @@
             z-index: 10;
             border-radius: 50%;
             transition: all 0.4s;
-    
-            &:hover{
+
+            &:hover {
                 transform: rotate(180deg);
                 width: 12rem;
                 height: 12rem;
                 border-radius: 50%;
-                transition: width 0.5s ease, height 0.5s ease, transform 0.7s ease;        
-            }        
+                transition: width 0.5s ease, height 0.5s ease,
+                    transform 0.7s ease;
+            }
         }
-    
-        &-circle > p{
+
+        &-circle > p {
             display: none;
             font-size: 32px;
             text-align: center;
-            
         }
-    
-        &-circle:hover >p{
+
+        &-circle:hover > p {
             cursor: pointer;
             display: block;
             transition: opacity 0.5s;
             animation: load 0.3s;
             transform: rotateZ(180deg);
         }
-    
-        &-circle > h1{
+
+        &-circle > h1 {
             display: inline-block;
             font-size: 72px;
         }
-    
-        &-circle:hover >h1{
+
+        &-circle:hover > h1 {
             display: none;
             transform: rotateY(180deg);
             transition: all 0.3s;
         }
     }
 
-    &-pulse{
+    &-pulse {
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
 
-        &-p1{
+        &-p1 {
             transition: all 1s;
             animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
         }
 
-        &-p2{
+        &-p2 {
             transition: all 1s;
             animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
             animation-delay: 1s;
         }
 
-        &-p3{
+        &-p3 {
             transition: all 1s;
             animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
             animation-delay: 2s;
         }
 
-        &-p4{
+        &-p4 {
             transition: all 1s;
             animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
             animation-delay: 3s;
         }
 
-        &-p5{
+        &-p5 {
             transition: all 1s;
             animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
             animation-delay: 4s;
         }
 
-        &-p6{
+        &-p6 {
             transition: all 1s;
             animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
             animation-delay: 5s;
         }
-
     }
-
 }
 
-#animation{
+#animation {
     display: none;
 }
 
-#btn:hover + #animation{
+#btn:hover + #animation {
     display: flex;
 }
 
-
-.shape{
+.shape {
     position: absolute;
     visibility: hidden;
     width: 13rem;
@@ -253,9 +248,7 @@
     border: 1px solid $lightCircleBlue;
 }
 
-
-
-.bit{
+.bit {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -264,7 +257,7 @@
 
     background-color: #000;
 
-    &__button{
+    &__button {
         height: 4rem;
         width: 4rem;
 
@@ -272,23 +265,53 @@
         border-radius: 5px;
         background-color: transparent;
 
-        font-family: 'video';
+        font-family: "video";
         font-size: 48px;
 
         transform: rotateY(-180deg);
         transition: transform 1s;
 
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
     }
 
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 }
 
-.building{
+.moon {
+    background-color: #d3d9e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__button {
+        border: none;
+        min-width: 8rem;
+        min-height: 8rem;
+        border-radius: 50%;
+        background: #d3d9e7;
+        box-shadow: 26px 26px 51px #c2c8d5, -26px -26px 51px #e4eaf9;
+
+        font-family: "Yuji Boku", serif;
+        font-weight: 100;
+        font-size: 48px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            border-radius: 50%;
+            background: linear-gradient(145deg, #bec3d0, #e2e8f7);
+            box-shadow: 26px 26px 51px #c2c8d5, -26px -26px 51px #e4eaf9;
+        }
+    }
+}
+
+.building {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -296,31 +319,27 @@
     /// you are here.
 }
 
-.rotateBit{
+.rotateBit {
     background-color: white;
     transform: rotateY(180deg);
     transition: transform 0.5s;
 }
-.rotateBit2{
+.rotateBit2 {
     background-color: white;
     transform: rotateY(360deg);
     transition: transform 1s;
 }
 
-
-
-
 @media screen and (max-width: 1000px) {
-
-    .display{
+    .display {
         display: flex;
         flex-direction: column;
 
-        &__aside{
+        &__aside {
             display: none;
         }
 
-        &__items{
+        &__items {
             width: 100%;
             border: none;
 
