@@ -1,350 +1,391 @@
 .display {
+  display: flex;
+  width: 100%;
+
+  &__aside {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    order: 1;
+    align-items: center;
+    padding: 1rem;
+    width: 15.5%;
+    height: 887px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    background-color: $wineRed;
 
-    &__aside {
-        display: flex;
-        flex-direction: column;
-        order: 1;
-        align-items: center;
-        padding: 1rem;
-        width: 15.5%;
-        height: 887px;
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
-        border-right: 1px solid white;
-        background-color: $wineRed;
+    &-input {
+      margin-top: 2rem;
+      width: 70%;
+      height: 2.5rem;
+      background-color: $black;
+      color: white;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      text-align: center;
+      margin-bottom: 1rem;
 
-        &-input {
-            margin-top: 2rem;
-            width: 70%;
-            height: 2.5rem;
-            background-color: $black;
-            color: white;
-            border: 1px solid #fff;
-            border-radius: 5px;
-            text-align: center;
-            margin-bottom: 1rem;
-
-            &::placeholder {
-                font-family: "blender pro";
-                font-size: 16px;
-                color: white;
-            }
-        }
-
-        &-button {
-            cursor: pointer;
-            background-color: transparent;
-            border: 1px solid transparent;
-            width: 36px;
-            height: 36px;
-            border-radius: 25px;
-        }
+      &::placeholder {
+        font-family: "blender pro";
+        font-size: 16px;
+        color: white;
+      }
     }
 
-    &__items {
-        order: 2;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 84.5%;
-        border: 1px white solid;
-        border-left: 1px solid transparent;
-
-        &-element {
-            border: 1px solid black;
-            height: 295px;
-        }
+    &-button {
+      cursor: pointer;
+      background-color: transparent;
+      border: 1px solid transparent;
+      width: 36px;
+      height: 36px;
+      border-radius: 25px;
     }
+  }
+
+  &__items {
+    order: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 84.5%;
+    border: 1px white solid;
+    border-left: 1px solid transparent;
+
+    &-element {
+      border: 1px solid black;
+      height: 295px;
+    }
+  }
 }
 
 .listElement {
-    font-family: "Blender Pro";
-    font-weight: 900;
+  font-family: "Blender Pro";
+  font-weight: 900;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /// Elements
 
 .textReader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
 
-    background: linear-gradient(to left, black 50%, #fff 50%) right;
-    background-size: 250%;
-    transition: 0.4s ease-out;
+  background: linear-gradient(to left, black 50%, #fff 50%) right;
+  background-size: 250%;
+  transition: 0.4s ease-out;
 
-    padding: 2rem;
+  padding: 2rem;
 
-    &-title {
-        text-align: center;
-        font-family: "Public Sans", sans-serif;
-        font-weight: 100;
-        font-size: 36px;
+  &-title {
+    text-align: center;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+  }
+
+  &-description {
+    color: black;
+    font-family: "quicksand", sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    &-h2 {
+      margin-bottom: 2rem;
     }
+  }
 
-    &-description {
-        color: black;
-        font-family: "quicksand", sans-serif;
-        font-weight: bolder;
-        font-size: 16px;
-        &-h2 {
-            margin-bottom: 2rem;
-        }
-    }
-
-    &:hover {
-        background-position: left;
-        cursor: pointer;
-    }
+  &:hover {
+    background-position: left;
+    cursor: pointer;
+  }
 }
 
 .hsuccess {
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    z-index: 100;
-    cursor: pointer;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 100;
+  cursor: pointer;
 
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 0%;
+    padding-top: 0%;
+    transform: translate(-50%, -50%);
+    background: #e1e1e1;
+    transition: 0.5s ease padding-top, 0.5s ease width;
+  }
+
+  &:hover {
     &:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
+      width: 150%;
+      padding-top: 150%;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    &-circle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 10rem;
+      height: 10rem;
+      background-color: $circleBlue;
+      z-index: 10;
+      border-radius: 50%;
+      transition: all 0.4s;
+
+      &:hover {
+        transform: rotate(180deg);
+        width: 12rem;
+        height: 12rem;
         border-radius: 50%;
-        width: 0%;
-        padding-top: 0%;
-        transform: translate(-50%, -50%);
-        background: #e1e1e1;
-        transition: 0.5s ease padding-top, 0.5s ease width;
+        transition: width 0.5s ease, height 0.5s ease, transform 0.7s ease;
+      }
     }
 
-    &:hover {
-        &:before {
-            width: 150%;
-            padding-top: 150%;
-        }
+    &-circle > p {
+      display: none;
+      font-size: 32px;
+      text-align: center;
     }
 
-    &-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-
-        &-circle {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 10rem;
-            height: 10rem;
-            background-color: $circleBlue;
-            z-index: 10;
-            border-radius: 50%;
-            transition: all 0.4s;
-
-            &:hover {
-                transform: rotate(180deg);
-                width: 12rem;
-                height: 12rem;
-                border-radius: 50%;
-                transition: width 0.5s ease, height 0.5s ease,
-                    transform 0.7s ease;
-            }
-        }
-
-        &-circle > p {
-            display: none;
-            font-size: 32px;
-            text-align: center;
-        }
-
-        &-circle:hover > p {
-            cursor: pointer;
-            display: block;
-            transition: opacity 0.5s;
-            animation: load 0.3s;
-            transform: rotateZ(180deg);
-        }
-
-        &-circle > h1 {
-            display: inline-block;
-            font-size: 72px;
-        }
-
-        &-circle:hover > h1 {
-            display: none;
-            transform: rotateY(180deg);
-            transition: all 0.3s;
-        }
+    &-circle:hover > p {
+      cursor: pointer;
+      display: block;
+      transition: opacity 0.5s;
+      animation: load 0.3s;
+      transform: rotateZ(180deg);
     }
 
-    &-pulse {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-
-        &-p1 {
-            transition: all 1s;
-            animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
-        }
-
-        &-p2 {
-            transition: all 1s;
-            animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
-            animation-delay: 1s;
-        }
-
-        &-p3 {
-            transition: all 1s;
-            animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
-            animation-delay: 2s;
-        }
-
-        &-p4 {
-            transition: all 1s;
-            animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
-            animation-delay: 3s;
-        }
-
-        &-p5 {
-            transition: all 1s;
-            animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
-            animation-delay: 4s;
-        }
-
-        &-p6 {
-            transition: all 1s;
-            animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
-            animation-delay: 5s;
-        }
+    &-circle > h1 {
+      display: inline-block;
+      font-size: 72px;
     }
+
+    &-circle:hover > h1 {
+      display: none;
+      transform: rotateY(180deg);
+      transition: all 0.3s;
+    }
+  }
+
+  &-pulse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    &-p1 {
+      transition: all 1s;
+      animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
+    }
+
+    &-p2 {
+      transition: all 1s;
+      animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
+      animation-delay: 1s;
+    }
+
+    &-p3 {
+      transition: all 1s;
+      animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
+      animation-delay: 2s;
+    }
+
+    &-p4 {
+      transition: all 1s;
+      animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
+      animation-delay: 3s;
+    }
+
+    &-p5 {
+      transition: all 1s;
+      animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
+      animation-delay: 4s;
+    }
+
+    &-p6 {
+      transition: all 1s;
+      animation: pulse 0.5s, rotating 12s linear infinite, load 1s linear;
+      animation-delay: 5s;
+    }
+  }
 }
 
 #animation {
-    display: none;
+  display: none;
 }
 
 #btn:hover + #animation {
-    display: flex;
+  display: flex;
 }
 
 .shape {
-    position: absolute;
-    visibility: hidden;
-    width: 13rem;
-    height: 13rem;
-    border: 1px solid $lightCircleBlue;
+  position: absolute;
+  visibility: hidden;
+  width: 13rem;
+  height: 13rem;
+  border: 1px solid $lightCircleBlue;
 }
 
 .bit {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 
-    background-color: #000;
+  background-color: #000;
 
-    &__button {
-        height: 4rem;
-        width: 4rem;
+  &__button {
+    height: 4rem;
+    width: 4rem;
 
-        border: 2px solid white;
-        border-radius: 5px;
-        background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
 
-        font-family: "video";
-        font-size: 48px;
+    font-family: "video";
+    font-size: 48px;
 
-        transform: rotateY(-180deg);
-        transition: transform 1s;
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
+    transform: rotateY(-180deg);
+    transition: transform 1s;
 
     &:hover {
-        cursor: pointer;
+      cursor: pointer;
     }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .moon {
-    background-color: #d3d9e7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #d3d9e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &__button {
-        border: none;
-        min-width: 8rem;
-        min-height: 8rem;
-        border-radius: 50%;
-        background: #d3d9e7;
-        box-shadow: 26px 26px 51px #c2c8d5, -26px -26px 51px #e4eaf9;
+  &__button {
+    border: none;
+    min-width: 8rem;
+    min-height: 8rem;
+    border-radius: 50%;
+    background: #d3d9e7;
+    box-shadow: 26px 26px 51px #c2c8d5, -26px -26px 51px #e4eaf9;
 
-        font-family: "Yuji Boku", serif;
-        font-weight: 100;
-        font-size: 48px;
+    font-family: "Yuji Boku", serif;
+    font-weight: 100;
+    font-size: 48px;
 
-        &:hover {
-            cursor: pointer;
-        }
-
-        &:active {
-            border-radius: 50%;
-            background: linear-gradient(145deg, #bec3d0, #e2e8f7);
-            box-shadow: 26px 26px 51px #c2c8d5, -26px -26px 51px #e4eaf9;
-        }
+    &:hover {
+      cursor: pointer;
     }
+
+    &:active {
+      border-radius: 50%;
+      background: linear-gradient(145deg, #bec3d0, #e2e8f7);
+      box-shadow: 26px 26px 51px #c2c8d5, -26px -26px 51px #e4eaf9;
+    }
+  }
+}
+
+.heartbeat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+
+  &__heart {
+    position: relative;
+    display: block;
+    width: 75px;
+    height: 75px;
+    background: $fuschia;
+    border-radius: 0 0 0 10px;
+    transform: rotate(-45deg);
+
+    &:hover{
+        cursor: pointer;
+        animation: heartbeat 0.5s infinite;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 75px;
+      height: 75px;
+      background: $fuschia;
+      border-radius: 50%;
+    }
+
+    &::before {
+      top: -37px;
+      left: 0;
+    }
+
+    &::after {
+      top: 0;
+      right: -37px;
+    }
+  }
 }
 
 .building {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    /// you are here.
+  /// you are here.
 }
 
 .rotateBit {
-    background-color: white;
-    transform: rotateY(180deg);
-    transition: transform 0.5s;
+  background-color: white;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
 }
 .rotateBit2 {
-    background-color: white;
-    transform: rotateY(360deg);
-    transition: transform 1s;
+  background-color: white;
+  transform: rotateY(360deg);
+  transition: transform 1s;
 }
 
 @media screen and (max-width: 1000px) {
-    .display {
-        display: flex;
-        flex-direction: column;
+  .display {
+    display: flex;
+    flex-direction: column;
 
-        &__aside {
-            display: none;
-        }
-
-        &__items {
-            width: 100%;
-            border: none;
-
-            display: grid;
-            grid-template-columns: 1fr;
-        }
+    &__aside {
+      display: none;
     }
+
+    &__items {
+      width: 100%;
+      border: none;
+
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
 }
