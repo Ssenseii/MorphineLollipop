@@ -1,0 +1,27 @@
+.notice {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column nowrap;
+
+  font-family: "Blender Pro";
+
+  &__title {
+    padding: 4rem;
+    width: 50%;
+    font-size: 48px;
+
+  }
+
+  &__text {
+    font-size: 24px;
+    color: #dddddd;
+  }
+}
+
+.toYou{
+  color: green;
+  font-style: italic;
+}
